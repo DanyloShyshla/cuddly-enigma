@@ -1,5 +1,5 @@
 package ua.lviv.iot.babyshop.models;
 
-public enum SKIN_CARE_TYPE {
+public enum SkinCareType {
     CREME, GEL
 }
