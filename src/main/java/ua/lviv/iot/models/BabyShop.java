@@ -11,7 +11,17 @@ public class BabyShop {
     private String supplier;
     private String country;
 
-    public BabyShop(String name, String brand, double price, SafetyStandard wareSafetyStandard, int goodAvailability, int warranty, double ageSuitability, String supplier, String country) {
+    public BabyShop(
+            final String name,
+            final String brand,
+            final double price,
+            final SafetyStandard wareSafetyStandard,
+            final int goodAvailability,
+            final int warranty,
+            final double ageSuitability,
+            final String supplier,
+            final String country
+    ) {
         this.name = name;
         this.brand = brand;
         this.price = price;
@@ -23,13 +33,13 @@ public class BabyShop {
         this.country = country;
     }
 
-    public BabyShop(){}
+    public BabyShop() { }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(final String name) {
         this.name = name;
     }
 
@@ -37,7 +47,7 @@ public class BabyShop {
         return brand;
     }
 
-    public void setBrand(String brand) {
+    public void setBrand(final String brand) {
         this.brand = brand;
     }
 
@@ -45,7 +55,7 @@ public class BabyShop {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(final double price) {
         this.price = price;
     }
 
@@ -53,7 +63,7 @@ public class BabyShop {
         return wareSafetyStandard;
     }
 
-    public void setWareSafetyStandard(SafetyStandard wareSafetyStandard) {
+    public void setWareSafetyStandard(final SafetyStandard wareSafetyStandard) {
         this.wareSafetyStandard = wareSafetyStandard;
     }
 
@@ -61,7 +71,7 @@ public class BabyShop {
         return goodAvailability;
     }
 
-    public void setGoodAvailability(int goodAvailability) {
+    public void setGoodAvailability(final int goodAvailability) {
         this.goodAvailability = goodAvailability;
     }
 
@@ -69,7 +79,7 @@ public class BabyShop {
         return warranty;
     }
 
-    public void setWarranty(int warranty) {
+    public void setWarranty(final int warranty) {
         this.warranty = warranty;
     }
 
@@ -77,7 +87,7 @@ public class BabyShop {
         return ageSuitability;
     }
 
-    public void setAgeSuitability(double ageSuitability) {
+    public void setAgeSuitability(final double ageSuitability) {
         this.ageSuitability = ageSuitability;
     }
 
@@ -85,7 +95,7 @@ public class BabyShop {
         return supplier;
     }
 
-    public void setSupplier(String supplier) {
+    public void setSupplier(final String supplier) {
         this.supplier = supplier;
     }
 
@@ -93,7 +103,7 @@ public class BabyShop {
         return country;
     }
 
-    public void setCountry(String country) {
+    public void setCountry(final String country) {
         this.country = country;
     }
 }

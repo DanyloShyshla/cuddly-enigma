@@ -1,19 +1,39 @@
 package ua.lviv.iot.models;
 
-public class Thermometer extends BabyShop{
+public class Thermometer extends BabyShop {
 
-    public String color;
-    public ThermometerType thermometerModelType;
+    private String color;
+    private ThermometerType thermometerModelType;
 
-    public Thermometer(String name, String brand, double price, SafetyStandard wareSafetyStandard, int goodAvailability, int warranty, double ageSuitability, String supplier, String country) {
-        super(name, brand, price, wareSafetyStandard, goodAvailability, warranty, ageSuitability, supplier, country);
+    public Thermometer(
+            final String name,
+            final String brand,
+            final double price,
+            final SafetyStandard wareSafetyStandard,
+            final int goodAvailability,
+            final int warranty,
+            final double ageSuitability,
+            final String supplier,
+            final String country
+    ) {
+        super(
+                name,
+                brand,
+                price,
+                wareSafetyStandard,
+                goodAvailability,
+                warranty,
+                ageSuitability,
+                supplier,
+                country
+        );
     }
 
     public String getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(final String color) {
         this.color = color;
     }
 
@@ -21,7 +41,9 @@ public class Thermometer extends BabyShop{
         return thermometerModelType;
     }
 
-    public void setThermometerModelType(ThermometerType thermometerModelType) {
+    public void setThermometerModelType(
+            final ThermometerType thermometerModelType
+    ) {
         this.thermometerModelType = thermometerModelType;
     }
 }

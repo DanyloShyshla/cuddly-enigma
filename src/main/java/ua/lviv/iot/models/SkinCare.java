@@ -1,35 +1,55 @@
 package ua.lviv.iot.models;
 
 public class SkinCare extends BabyShop {
-    public boolean hypoallergenic;
-    public int bottleSizeInML;
-    public SkinCareType skinCareModelType;
+    private boolean hypoallergenic;
+    private int bottleSizeInML;
+    private SkinCareType skinCareModelType;
 
-    public SkinCare(String name, String brand, double price, SafetyStandard wareSafetyStandard, int goodAvailability, int warranty, double ageSuitability, String supplier, String country) {
-        super(name, brand, price, wareSafetyStandard, goodAvailability, warranty, ageSuitability, supplier, country);
+    public SkinCare(
+            final String name,
+            final String brand,
+            final double price,
+            final SafetyStandard wareSafetyStandard,
+            final int goodAvailability,
+            final int warranty,
+            final double ageSuitability,
+            final String supplier,
+            final String country
+    ) {
+        super(
+                name,
+                brand,
+                price,
+                wareSafetyStandard,
+                goodAvailability,
+                warranty,
+                ageSuitability,
+                supplier,
+                country
+        );
     }
 
-    public boolean isHypoallergenic() {
+    final boolean isHypoallergenic() {
         return hypoallergenic;
     }
 
-    public void setHypoallergenic(boolean hypoallergenic) {
+    public void setHypoallergenic(final boolean hypoallergenic) {
         this.hypoallergenic = hypoallergenic;
     }
 
-    public int getBottleSizeInML() {
+    final int getBottleSizeInML() {
         return bottleSizeInML;
     }
 
-    public void setBottleSizeInML(int bottleSizeInML) {
+    public void setBottleSizeInML(final int bottleSizeInML) {
         this.bottleSizeInML = bottleSizeInML;
     }
 
-    public SkinCareType getSkinCareModelType() {
+    final SkinCareType getSkinCareModelType() {
         return skinCareModelType;
     }
 
-    public void setSkinCareModelType(SkinCareType skinCareModelType) {
+    public void setSkinCareModelType(final SkinCareType skinCareModelType) {
         this.skinCareModelType = skinCareModelType;
     }
 }

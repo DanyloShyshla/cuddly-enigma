@@ -9,32 +9,42 @@ public class Chair extends BabyShop {
     private String material;
 
     public Chair(
-            String name,
-            String brand,
-            double price,
-            SafetyStandard wareSafetyStandard,
-            int goodAvailability,
-            int warranty,
-            double ageSuitability,
-            String supplier,
-            String country,
-            double height,
-            double width,
-            double depth,
-            double weightLimit,
-            String material
+            final String name,
+            final String brand,
+            final double price,
+            final SafetyStandard wareSafetyStandard,
+            final int goodAvailability,
+            final int warranty,
+            final double ageSuitability,
+            final String supplier,
+            final String country,
+            final double height,
+            final double width,
+            final double depth,
+            final double weightLimit,
+            final String material
 
     ) {
-        super(name, brand, price, wareSafetyStandard, goodAvailability, warranty, ageSuitability, supplier, country);
+        super(
+                name,
+                brand,
+                price,
+                wareSafetyStandard,
+                goodAvailability,
+                warranty,
+                ageSuitability,
+                supplier,
+                country
+        );
     }
 
-    public Chair(){}
+    public Chair() { }
 
     public double getHeight() {
         return height;
     }
 
-    public void setHeight(double height) {
+    public void setHeight(final double height) {
         this.height = height;
     }
 
@@ -42,7 +52,7 @@ public class Chair extends BabyShop {
         return width;
     }
 
-    public void setWidth(double width) {
+    public void setWidth(final double width) {
         this.width = width;
     }
 
@@ -50,7 +60,7 @@ public class Chair extends BabyShop {
         return depth;
     }
 
-    public void setDepth(double depth) {
+    public void setDepth(final double depth) {
         this.depth = depth;
     }
 
@@ -58,7 +68,7 @@ public class Chair extends BabyShop {
         return weightLimit;
     }
 
-    public void setWeightLimit(double weightLimit) {
+    public void setWeightLimit(final double weightLimit) {
         this.weightLimit = weightLimit;
     }
 
@@ -66,7 +76,7 @@ public class Chair extends BabyShop {
         return material;
     }
 
-    public void setMaterial(String material) {
+    public void setMaterial(final String material) {
         this.material = material;
     }
 }

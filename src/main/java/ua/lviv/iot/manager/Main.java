@@ -1,7 +1,7 @@
 package ua.lviv.iot.manager;
 
-public class Main {
-    public static void main(String[] args) {
+public final class Main {
+    public static void main(final String[] args) {
         System.out.println("---------------------");
         System.out.println("----- BABY SHOP -----");
         System.out.println("---------------------");
@@ -12,5 +12,8 @@ public class Main {
         System.out.println();
         name.sortByWarranty(true);
         System.out.println();
+    }
+
+    private Main() {
     }
 }

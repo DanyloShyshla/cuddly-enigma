@@ -1,32 +1,42 @@
 package ua.lviv.iot.models;
 
 public class Diapers extends BabyShop {
-    public int amountInPack;
-    public DiapersSize diapersModelSize;
-    public KidWeight kidWeightInKilo;
+    private int amountInPack;
+    private DiapersSize diapersModelSize;
+    private KidWeight kidWeightInKilo;
 
     public Diapers(
-            String name,
-            String brand,
-            double price,
-            SafetyStandard wareSafetyStandard,
-            int goodAvailability,
-            int warranty,
-            double ageSuitability,
-            String supplier,
-            String country,
-            int amountInPack,
-            DiapersSize diapersModelSize,
-            KidWeight kidWeightInKilo
+           final String name,
+           final String brand,
+           final double price,
+           final SafetyStandard wareSafetyStandard,
+           final int goodAvailability,
+           final int warranty,
+           final double ageSuitability,
+           final String supplier,
+           final String country,
+           final int amountInPack,
+           final DiapersSize diapersModelSize,
+           final KidWeight kidWeightInKilo
     ) {
-        super(name, brand, price, wareSafetyStandard, goodAvailability, warranty, ageSuitability, supplier, country);
+        super(
+                name,
+                brand,
+                price,
+                wareSafetyStandard,
+                goodAvailability,
+                warranty,
+                ageSuitability,
+                supplier,
+                country
+        );
     }
 
     public int getAmountInPack() {
         return amountInPack;
     }
 
-    public void setAmountInPack(int amountInPack) {
+    public void setAmountInPack(final int amountInPack) {
         this.amountInPack = amountInPack;
     }
 
@@ -34,7 +44,7 @@ public class Diapers extends BabyShop {
         return diapersModelSize;
     }
 
-    public void setDiapersModelSize(DiapersSize diapersModelSize) {
+    public void setDiapersModelSize(final DiapersSize diapersModelSize) {
         this.diapersModelSize = diapersModelSize;
     }
 
@@ -42,7 +52,7 @@ public class Diapers extends BabyShop {
         return kidWeightInKilo;
     }
 
-    public void setKidWeightInKilo(KidWeight kidWeightInKilo) {
+    public void setKidWeightInKilo(final KidWeight kidWeightInKilo) {
         this.kidWeightInKilo = kidWeightInKilo;
     }
 }
